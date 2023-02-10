@@ -42,7 +42,7 @@ bowling | 1 | 24000
       and reservation.end_date < '2023-02-1'
     group by facility.name
 
-### Endpoints:
+### Endpoints (testing in Postman):
 - Get all reservations: http://localhost:8090/all
 - Get all reservations by client id: http://localhost:8090/client/{id}
 - Get all reservations by client name: http://localhost:8090/client/name/{name}
