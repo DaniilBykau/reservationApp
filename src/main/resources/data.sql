@@ -48,28 +48,3 @@ INSERT INTO reservation(start_date, end_date, facility_id, client_id, cost)
 VALUES ('2023-01-05', '2023-01-21', 3, 5, 24000);
 INSERT INTO reservation(start_date, end_date, facility_id, client_id, cost)
 VALUES ('2023-01-07', '2023-01-14', 4, 9, 2100);
-
-
--- select facility.name,
---        SUM(DATEDIFF(day, reservation.start_date, reservation.end_date)) as reservedDays,
---        count(reservation.facility_id)                                   as reservations
--- from facility
---          join reservation on reservation.facility_id = facility.id
--- where reservation.start_date > '2022-01-01'
---   and reservation.end_date < '2023-02-1'
--- group by facility.name
-
--- select facility.name,
---        count(reservation.client_id) as clients,
---        SUM(reservation.cost)        as Income
---
--- from facility
---          join reservation on reservation.facility_id = facility.id
---          join client on reservation.client_id = client.id
--- where reservation.start_date > '2022-01-01'
---   and reservation.end_date < '2023-02-1'
--- group by facility.name
-
-
-
-
